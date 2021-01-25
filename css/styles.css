@@ -10,6 +10,28 @@
     width: auto;
 }
 
+nav {
+    background: #ffd357;
+    height: 3rem;
+    box-shadow: 0 .5vh 1vh #44444499;
+    color: #fff;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.navbar {
+    padding: 0;
+}
+
 .text-masthead {
     color: #ffd;
     text-shadow: #222 0 0 .35rem;
@@ -27,6 +49,10 @@ a:active, a:focus, a:hover {
 
 .bg-primary {
     background-color: #ffd357!important
+}
+
+.bg-secondary {
+    background-color: #f0f2f5 !important
 }
 
 @media (min-width: 992px) {
