@@ -59,3 +59,7 @@ a:active, a:focus, a:hover {
         font-size: 1.35rem;
     }
 }
+
+.line {
+    display:inline-block;
+}
