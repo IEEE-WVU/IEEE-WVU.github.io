@@ -12,10 +12,13 @@
 
 nav {
     background: #ffd357;
-    height: 3rem;
     box-shadow: 0 .5vh 1vh #44444499;
     color: #fff;
     font-weight: 400;
+}
+
+.navbar {
+    padding: 0 .5rem;
 }
 
 .nav-link {
@@ -25,11 +28,12 @@ nav {
 .navbar-brand {
     font-weight: 600;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.navbar {
-    padding: 0;
+.navbar-collapse {
+    background: #ffd357;
 }
 
 .text-masthead {
@@ -44,7 +48,7 @@ a {
 }
 
 a:active, a:focus, a:hover {
-    color: #ffd357
+    color: #f5c94e
 }
 
 .bg-primary {
