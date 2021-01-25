@@ -13,7 +13,6 @@
 nav {
     background: #ffd357;
     box-shadow: 0 .5vh 1vh #44444499;
-    color: #fff;
     font-weight: 400;
 }
 
@@ -22,7 +21,8 @@ nav {
 }
 
 .nav-link {
-    color: white !important;
+    color: #212529 !important;
+    font-weight: 400;
 }
 
 .navbar-brand {
@@ -30,6 +30,12 @@ nav {
     font-size: 1.5rem;
     margin-top: auto;
     margin-bottom: auto;
+    color: #212529 !important;
+}
+
+.navbar-toggler {
+    color: #212529 !important;
+    border-color: #21252944 !important;
 }
 
 .navbar-collapse {
@@ -49,11 +55,11 @@ nav {
 }
 
 a {
-    color: #ffd357
+    color: #ffd357;
 }
 
 a:active, a:focus, a:hover {
-    color: #f5c94e
+    color: #f5c94e;
 }
 
 .bg-primary {
@@ -97,4 +103,15 @@ a:active, a:focus, a:hover {
 
 .line {
     display:inline-block;
+}
+
+.link-btn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: #ffd357;
+    color: #212529;
+}
+
+.link-btn:active, .link-btn:focus, .link-btn:hover {
+    color: #212529;
 }
