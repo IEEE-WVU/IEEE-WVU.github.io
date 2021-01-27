@@ -1,12 +1,19 @@
 :root {
+    --primary: #ffd357;
+    --primary-dark: #f5c94e;
+    --primary-transparent: #ffd35788;
+    --off-black: #212529;
+    --off-black-transparent: #21252944;
+    --text-light: #ffd;
+    --bg-secondary: #f0f2f5;
 }
 
 .bg-primary {
-    background-color: #ffd357 !important
+    background-color: var(--primary) !important
 }
 
 .bg-secondary {
-    background-color: #f0f2f5 !important
+    background-color: var(--bg-secondary) !important
 }
 
 .masthead {
@@ -37,14 +44,14 @@
 }
 
 .text-masthead {
-    color: #ffd;
+    color: var(--text-light);
     text-shadow: #222 0 0 .35rem;
     background: #22222244;
     box-shadow: #22222244 0 0 5rem 5rem;
 }
 
 nav {
-    background: #ffd357;
+    background: var(--primary);
     box-shadow: 0 .5vh 1vh #44444499;
     font-weight: 400;
 }
@@ -58,49 +65,49 @@ nav {
     font-size: 1.5rem;
     margin-top: auto;
     margin-bottom: auto;
-    color: #212529 !important;
+    color: var(--off-black) !important;
 }
 
 .navbar-toggler {
-    color: #212529 !important;
-    border-color: #21252944 !important;
+    color: var(--off-black) !important;
+    border-color: var(--off-black-transparent) !important;
 }
 
 .navbar-collapse {
-    background: #ffd357;
+    background: var(--primary);
 }
 
 .nav-link {
-    color: #212529 !important;
+    color: var(--off-black) !important;
     font-weight: 400;
 }
 
 .btn-secondary {
-    background: #ffd357 !important;
-    border-color: #ffd357 !important;
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
 }
 
 .link-btn {
     margin-left: 1rem;
     margin-right: 1rem;
-    background: #ffd357;
-    color: #212529;
+    background: var(--primary);
+    color: var(--off-black);
 }
 
 .link-btn:active, .link-btn:focus, .link-btn:hover {
-    color: #212529;
+    color: var(--off-black);
 }
 
 a {
-    color: #ffd357;
+    color: var(--primary);
 }
 
 a:active, a:focus, a:hover {
-    color: #f5c94e;
+    color: var(--primary-dark);
 }
 
 .portfolio-item:hover .caption {
-    background-color: #ffd35788;
+    background-color: var(--primary-transparent);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
 }
