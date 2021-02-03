@@ -9,8 +9,8 @@
   <meta name="author" content="">
 
   <title>Build a CPU, in Minecraft!</title>
-  
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,7 +53,7 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto text-masthead">
-      <h1 class="mb-1">Build a CPU, in Minecraft!</h1>
+      <h1 class="mb-1">Build Logic Circuits, in Minecraft!</h1>
       <h3 class="mb-5">
         <span class="line">Tutorial offered by the
           <a class="line" href="https://ieee.orgs.wvu.edu/">WVU Chapter of IEEE</a>
@@ -68,10 +68,11 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2>Learn to design a CPU, from the ground up</h2>
+          <h2>Learn to design logic circuits, using Redstone!</h2>
           <div class="lead mt-5">
-            <p>CPUs are complicated. It's hard to learn complicated things on your own. Using Minecraft's redstone,
-              we'll design a simple CPU and explain how it works, so its easy to learn.</p>
+            <p>Logic circuits are complicated. It's hard to learn complicated things on your own. Using Minecraft's
+              redstone,
+              we'll design some simple logic circuits and explain how they work, so its easy to learn.</p>
           </div>
         </div>
       </div>
@@ -82,15 +83,15 @@
   <section class="content-section bg-primary" id="components">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h2 class="mb-5">CPU Component Tutorials</h2>
+        <h2 class="mb-5">Logic Circuit Tutorials</h2>
       </div>
       <div class="row no-gutters">
 
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#aluModal" data-toggle="modal">
+          <a class="portfolio-item" href="#logicGatesModal" data-toggle="modal">
             <div class="caption">
               <div class="caption-content">
-                <p class="mb-0">Arithmetic Logic Unit</p>
+                <p class="mb-0">Logic Gates</p>
               </div>
             </div>
             <img class="img-fluid" src="img/components_placeholder-1.png" alt="">
@@ -98,10 +99,10 @@
         </div>
 
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#ramModal" data-toggle="modal">
+          <a class="portfolio-item" href="#fullAdderModal" data-toggle="modal">
             <div class="caption">
               <div class="caption-content">
-                <p class="mb-0">Random Access Memory</p>
+                <p class="mb-0">Full Adder</p>
               </div>
             </div>
             <img class="img-fluid" src="img/components-placeholder-2.png" alt="">
@@ -109,10 +110,10 @@
         </div>
 
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#cuModal" data-toggle="modal">
+          <a class="portfolio-item" href="#flipFlopsModal" data-toggle="modal">
             <div class="caption">
               <div class="caption-content">
-                <p class="mb-0">Control Unit</p>
+                <p class="mb-0">Flip Flops</p>
               </div>
             </div>
             <img class="img-fluid" src="img/components-placeholder-3.png" alt="">
@@ -120,10 +121,10 @@
         </div>
 
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#ioModal" data-toggle="modal">
+          <a class="portfolio-item" href="#fullSubtractorModal" data-toggle="modal">
             <div class="caption">
               <div class="caption-content">
-                <p class="mb-0">Input/Output Processor</p>
+                <p class="mb-0">Full Subtractor</p>
               </div>
             </div>
             <img class="img-fluid" src="img/components-placeholder-4.png" alt="">
@@ -182,21 +183,22 @@
   </footer>
 
   <!-- Tutorial Modals -->
-  <!-- Alu Modal -->
-  <div class="modal fade" id="aluModal" tabindex="-1" role="dialog" aria-labelledby="aluModal" aria-hidden="true">
+  <!-- Logic Gates Modal -->
+  <div class="modal fade" id="logicGatesModal" tabindex="-1" role="dialog" aria-labelledby="logicGates"
+       aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-header">
-          <h5 class="modal-title" id="aluModal">Arithmetic Logic Unit (ALU)</h5>
+          <h5 class="modal-title" id="logicGates">Logic Gates</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
 
         <div class="modal-body">
-          In computing, an arithmetic logic unit is a combinational digital circuit that performs arithmetic and bitwise
-          operations on integer binary numbers.
+          A logic gate is an idealized model of computation or physical electronic device implementing a Boolean
+          function, a logical operation performed on one or more binary inputs that produces a single binary output.
         </div>
 
         <div class="modal-footer">
@@ -207,21 +209,22 @@
     </div>
   </div>
 
-  <!-- RAM Modal -->
-  <div class="modal fade" id="ramModal" tabindex="-1" role="dialog" aria-labelledby="ramModal" aria-hidden="true">
+  <!-- Full Adder Modal -->
+  <div class="modal fade" id="fullAdderModal" tabindex="-1" role="dialog" aria-labelledby="fullAdder"
+       aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-header">
-          <h5 class="modal-title" id="ramModal">Random Access Memory (RAM)</h5>
+          <h5 class="modal-title" id="fullAdder">Full Adder</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
 
         <div class="modal-body">
-          Random-access memory is a form of computer memory that can be read and changed in any order, typically used to
-          store working data and machine code.
+          A full adder is a combinational circuit that performs addition of two bits, taking into account carries from
+          the previous operation. This circuit has three inputs and two outputs.
         </div>
 
         <div class="modal-footer">
@@ -232,22 +235,23 @@
     </div>
   </div>
 
-  <!-- CU Modal -->
-  <div class="modal fade" id="cuModal" tabindex="-1" role="dialog" aria-labelledby="cuModal" aria-hidden="true">
+  <!-- Flip Flops Modal -->
+  <div class="modal fade" id="flipFlopsModal" tabindex="-1" role="dialog" aria-labelledby="flipFlops"
+       aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-header">
-          <h5 class="modal-title" id="cuModal">Control Unit (CU)</h5>
+          <h5 class="modal-title" id="flipFlops">Flip Flops</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
 
         <div class="modal-body">
-          The control unit is a component of a computer's central processing unit that directs the operation of the
-          processor. It tells the computer's memory, arithmetic and logic unit and input and output devices how to
-          respond to the instructions that have been sent to the processor.
+          In electronics, a flip-flop or latch is a circuit that has two stable states and can be used to store state
+          information. The circuit can be made to change state by signals applied to one or more control inputs and will
+          have one or two outputs.
         </div>
 
         <div class="modal-footer">
@@ -258,21 +262,23 @@
     </div>
   </div>
 
-  <!-- IO Modal -->
-  <div class="modal fade" id="ioModal" tabindex="-1" role="dialog" aria-labelledby="ioModal" aria-hidden="true">
+  <!-- Full Subtractor -->
+  <div class="modal fade" id="fullSubtractorModal" tabindex="-1" role="dialog" aria-labelledby="fullSubtractor"
+       aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-header">
-          <h5 class="modal-title" id="ioModal">Input/Output Processor</h5>
+          <h5 class="modal-title" id="fullSubtractor">Full Subtractor</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
 
         <div class="modal-body">
-          The input/output processor or I/O processor is a processor separate from the CPU designed to handle only
-          input/output processes for a device or the computer.
+          A full subtractor is a combinational circuit that performs subtraction of two bits, one is minuend and other
+          is subtrahend, taking into account borrow of the previous adjacent lower minuend bit. This circuit has three
+          inputs and two outputs.
         </div>
 
         <div class="modal-footer">
